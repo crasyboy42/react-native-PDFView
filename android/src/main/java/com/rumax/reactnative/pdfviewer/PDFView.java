@@ -245,6 +245,16 @@ public class PDFView extends com.github.barteksc.pdfviewer.PDFView implements
         this.resourceType = resourceType;
     }
 
+	public void setMaxZoom(float value)
+	{
+		super.setMaxZoom(value);
+	}
+
+	public void setMinZoom(float value)
+	{
+		super.setMinZoom(value);
+	}
+
     public void onDrop() {
         cleanup();
         sourceChanged = true;

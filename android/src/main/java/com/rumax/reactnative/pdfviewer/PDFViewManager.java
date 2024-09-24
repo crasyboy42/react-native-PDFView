@@ -110,6 +110,16 @@ public class PDFViewManager extends SimpleViewManager<PDFView> {
         pdfView.setEnableAnnotations(enableAnnotations);
     }
 
+	@ReactProp(name = "setMaxZoom")
+	public void setMaxZoom(PDFView pdfView, float value) {
+		pdfView.setMaxZoom(value);
+	}
+
+	@ReactProp(name = "setMinZoom")
+	public void setMinZoom(PDFView pdfView, float value) {
+		pdfView.setMinZoom(value);
+	}
+
     @Override
     public void onAfterUpdateTransaction(PDFView pdfView) {
         super.onAfterUpdateTransaction(pdfView);
