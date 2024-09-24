@@ -6,12 +6,12 @@
   "scripts": {
     "prepare": "npm run build",
     "prepack": "npm run build",
-    "build": "./node_modules/.bin/tsc",
+    "build": "tsc",
     "test": "jest",
     "test-coverage": "jest --coverage",
     "test-coverage-report": "codecov",
     "lint": "eslint --ext .js --ext .ts --ext .tsx ./src/",
-    "check-types": "./node_modules/.bin/tsc --noEmit"
+    "check-types": "tsc --noEmit"
   },
   "keywords": [
     "react-native react-component pdf viewer view android ios pdf"
@@ -42,7 +42,7 @@
     "react-native": "0.64.1",
     "react-test-renderer": "17.0.1",
     "ts-jest": "^28.0.6",
-    "typescript": "^4.2.4"
+    "typescript": "^4.9.5"
   },
   "files": [
     "src/index.tsx",
@@ -56,7 +56,6 @@
     "ReactNativeViewPDF/*.h",
     "ReactNativeViewPDF/*.m"
   ],
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/rumax/react-native-PDFView.git"
